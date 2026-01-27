@@ -1,0 +1,36 @@
+{
+  "name": "playwright-recorder-cli",
+  "version": "1.0.0",
+  "description": "Custom Playwright recorder with component snapshot support",
+  "main": "src/cli.js",
+  "bin": {
+    "playwright-recorder": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "playwright test",
+    "install-browsers": "playwright install"
+  },
+  "keywords": [
+    "playwright",
+    "codegen",
+    "aria-snapshot",
+    "testing",
+    "component-testing"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@playwright/test": "^1.40.0",
+    "playwright": "^1.40.0",
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2",
+    "ora": "^5.4.1",
+    "glob": "^10.3.10",
+    "yaml": "^2.3.4",
+    "diff": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
